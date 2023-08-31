@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_ic_bmr_bmi"
+        android:icon="@drawable/ic_kcal_burn"
+        android:title="@string/BMR_BMI" />
+
+    <item
+        android:id="@+id/nav_ic_mouse"
+        android:icon="@drawable/ic_mouse"
+        android:title="@string/mouse_lab" />
+
+    <item
+        android:id="@+id/nav_ic_info"
+        android:icon="@drawable/ic_info"
+        android:title="@string/information" />
+
+
+</menu>

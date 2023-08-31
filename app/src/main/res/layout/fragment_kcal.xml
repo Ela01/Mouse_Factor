@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/frame_heading"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/calculation_symbol_icon"
+                android:src="@drawable/ic_calculate" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradient_overlay_heading_kcal" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+
+                android:text="@string/bmr_bmi_target"
+                android:textColor="#DADADA"
+                android:textSize="40sp" />
+
+        </FrameLayout>
+
+        <View
+            android:id="@+id/gradient_overlay_heading_1"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:background="@drawable/gradient_overlay_kcal_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/frame_heading" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup_kcal_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:gravity="center_vertical"
+            android:paddingStart="48dp"
+            android:paddingEnd="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/frame_heading">
+
+            <RadioButton
+                android:id="@+id/radiobutton_kcal_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-thin"
+                android:padding="12dp"
+                android:text="@string/female"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/radiobutton_kcal_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-thin"
+                android:padding="12dp"
+                android:text="@string/male"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/gradient_overlay_heading_1"
+            app:layout_constraintStart_toEndOf="@id/radiogroup_kcal_gender"
+            app:layout_constraintTop_toBottomOf="@id/frame_heading">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints="none"
+                android:textColor="@color/white"
+                android:inputType="numberDecimal"
+                android:hint="BODY WEIGHT"
+                android:fontFamily="sans-serif-thin"
+                android:padding="24dp"
+                android:gravity="bottom"
+                android:layout_gravity="center_vertical"/>
+
+
+        </FrameLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+
+
+
+

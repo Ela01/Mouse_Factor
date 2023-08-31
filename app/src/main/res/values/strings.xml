@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Mouse Factor</string>
+    <string name="BMR_BMI">BMR+BMI</string>
+    <string name="mouse_lab">MOUSE LAB</string>
+    <string name="information">INFORMATION</string>
+    <string name="calculation_symbol_icon">Calculation Symbol Icon</string>
+    <string name="bmr_bmi_target">BMR + BMI + TARGET</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="unit">unit</string>
+    <string name="cm">cm</string>
+    <string name="inches">inches</string>
+</resources>
